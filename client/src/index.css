@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
 }
 
 /* font-family: 'Poppins', sans-serif; */
@@ -11,7 +12,7 @@
 
 /* //navbar css */
 .navbar {
-  font-family: "Poppins", sans-serif;
+  font-family: "Playflair display", sans-serif;
   font-size: 17px;
   line-height: 26px;
   text-transform: uppercase;
@@ -36,28 +37,7 @@
 /* =============================
 ==========footer============= */
 
-.footer {
-  color: white;
-  padding: 25px;
-  background: #000000; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #434343,
-    #000000
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #434343, #000000);
-}
 
-.footer a {
-  text-decoration: none;
-  color: white;
-  padding: 10px;
-}
-
-.footer a:hover {
-  color: #ffefba;
-  border-bottom: 1px solid #ffefba;
-}
 /* =================================
 ======== page not found css ======= */
 .pnf {
@@ -97,4 +77,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* ==================== */
+.product-link {
+  text-decoration: none !important;
+  color: black !important;
 }

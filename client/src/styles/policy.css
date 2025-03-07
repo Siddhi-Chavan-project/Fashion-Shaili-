@@ -1,0 +1,88 @@
+/* Global Styles */
+body {
+  background-color: #f8f9fa; 
+  
+}
+
+/* Policy Container */
+.policy-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Card Styling */
+.card {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.lead {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+/* Accordion Styling */
+.accordion-button {
+  font-weight: bold;
+  font-size: 1.1rem;
+  background-color: #e9ecef;
+  color: #333;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.accordion-button:hover {
+  background-color: #d6d8db;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  font-size: 1rem;
+  color: #555;
+  background-color: #ffffff;
+  border-left: 4px solid #007bff;
+  padding: 15px;
+}
+
+/* Table Styling */
+.table {
+  margin-top: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table th {
+  background-color: #007bff;
+  color: white;
+  text-align: left;
+}
+
+.table td {
+  background-color: #f8f9fa;
+}
+
+/* Contact Section */
+.policy-container p strong {
+  color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .policy-container {
+    padding: 20px;
+  }
+
+  .accordion-button {
+    font-size: 1rem;
+  }
+}

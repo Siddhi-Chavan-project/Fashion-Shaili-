@@ -1,0 +1,23 @@
+.list-group-item {
+  font-size: 18px; /* Increase font size */
+ /* Make text bold */  padding: 12px 15px; /* Increase padding for better spacing */
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.dashboard-menu{
+  background-color: #d16367;
+}
+
+
+.list-group-item:hover {
+  background-color: #007bff;
+  color: rgb(0, 0, 0);
+  border-color: #007bff;
+}
+
+.list-group-item.active {
+  background-color: #0056b3;
+  color: white;
+  border-color: #0056b3;
+}

@@ -1,0 +1,286 @@
+.cart-page {
+    margin-top: 64px;
+    background-color: rgb(248, 245, 235);
+  }
+  
+  .cart-image-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* Product Image Styling */
+  
+  .cartimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .cart-text {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: bold;
+   
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+
+
+
+
+
+
+
+  .cart-page h1 {
+    padding: 15px !important;
+    font-family: "roboto", sans-serif;
+    font-weight: normal;
+    background-color: rgba(0, 0, 255, 0.072) !important;
+  }
+  .cart-page h1 > p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .cart-page .card {
+    padding: 5px !important;
+    height: 150px !important;
+    margin-bottom: 5px !important;
+  }
+  .cart-page .cart-remove-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cart-page .cart-summary {
+    text-align: center;
+    /* margin-top: -140px !important; */
+  }
+  /* Payment Options Section */
+.payment-options {
+  margin-top: 15px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-options h5 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.payment-options .form-check {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.payment-options .form-check:hover {
+  background: #e9ecef;
+}
+
+/* Payment Options Section */
+.payment-options {
+  margin-top: 15px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-options h5 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Radio Button Styling */
+.payment-options .form-check {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.payment-options .form-check:hover {
+  background: #e9ecef;
+}
+
+.payment-options .form-check-input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  background: white;
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Radio Button Checked State */
+.payment-options .form-check-input:checked {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.payment-options .form-check-input:checked::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Label Styling */
+.payment-options .form-check-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+  cursor: pointer;
+}
+
+.payment-options .form-check-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #353434;
+  cursor: pointer;
+}
+
+/* Button Styles for Payment */
+.btn-primary,
+.btn-success {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+.btn-success:hover {
+  background: #218838;
+}
+
+/* COD Specific Styling */
+.btn-success {
+  background: #28a745;
+  border: none;
+}
+
+.btn-success:disabled {
+  background: #b4d3b2;
+  cursor: not-allowed;
+}
+
+
+/* UPI Payment Form Styles */
+.upi-form-container {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.upi-form-container h5 {
+  font-size: 1.2rem;
+  color: #000000;
+  border: #474747;
+  margin-bottom: 10px;
+}
+
+.upi-form-container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #261d1d;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.upi-form-container input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.upi-form-container .form-control:invalid {
+  border-color: red;
+}
+
+.upi-form-container button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upi-form-container button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.upi-form-container .btn-primary {
+  background-color: #007bff;
+  border: none;
+  color: white;
+}
+
+.upi-form-container .btn-outline-primary {
+  background-color: transparent;
+  border: 2px solid #007bff;
+  color: #007bff;
+  margin-top: 10px;
+}
+
+.upi-form-container .btn-primary:hover,
+.upi-form-container .btn-outline-primary:hover {
+  background-color: #0056b3;
+  color: white;
+}
+.choose-payment-way {
+  color: #000000;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.choose-payment-way:hover {
+  text-decoration: none;
+  color: #262626;
+}

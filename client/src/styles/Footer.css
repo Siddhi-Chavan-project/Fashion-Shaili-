@@ -1,0 +1,102 @@
+/* Footer Container */
+.footer{
+  background-color: #04073a;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
+    gap: 90px; /* Space between columns */
+    padding: 30px;
+  }
+  
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 15px;
+  }
+  
+  .footer-column-two {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  /* Make the content inside customer support and stay connected columns stack on smaller screens */
+  .footer-column-two .customer-support, .footer-column-two .stay-connected {
+    flex: 1;
+    gap: 20px;
+  }
+  .font-bold{
+    font-size: 25px !important;
+  }
+  /* Column Heading */
+  .footer-column h2 {
+    font-size: 1.2rem;
+  }
+  
+  /* Links Styling */
+  .footer-column a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-column a:hover {
+    color: #ff8c00; /* Hover color for links */
+  }
+  
+  /* Footer Bottom Section */
+  .footer-bottom {
+    margin-top: 30px;
+    color: white;
+
+    text-align: center;
+  }
+  
+  /* Social Media Icons */
+  .footer-bottom .flex a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  /* Adjust the gap between social media icons */
+.footer-bottom .flex a {
+  margin-right: 12px; /* Adjust this value to increase/decrease the gap */
+}
+
+.footer-bottom .flex a:last-child {
+  margin-right: 0; /* Remove margin from the last icon */
+}
+
+  
+  .footer-bottom .flex a:hover {
+    color: #ff8c00;
+  }
+  
+  /* Footer Copyright Section */
+  .footer-bottom p {
+    font-size: 14px;
+    color: #b0b0b0;
+  }
+  
+
+
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .footer-grid {
+      grid-template-columns: 1fr; /* Stack everything in one column for smaller screens */
+      gap: 20px;
+    }
+    .footer-column-two {
+      flex-direction: column;
+    }
+    .footer-column-two .customer-support,
+    .footer-column-two .stay-connected {
+      flex: none; /* Make sure these sections stack on small screens */
+    }
+  }
+  
+  

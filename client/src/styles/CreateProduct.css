@@ -1,0 +1,86 @@
+/* Page Layout */
+.dashboard {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Heading Styling */
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styling */
+  .form-control, .form-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .form-control:focus, .form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Category Dropdown */
+  .ant-select {
+    width: 100%;
+  }
+  
+  /* File Upload Styling */
+  .btn-outline-secondary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px dashed #007bff;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn-outline-secondary:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Image Preview */
+  .img-responsive {
+    max-width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+  }
+  
+  /* Create Button */
+  .btn-primary {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .col-md-3 {
+      display: none;
+    }
+    
+    .col-md-9 {
+      width: 100%;
+    }
+  }
+  

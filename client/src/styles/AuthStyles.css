@@ -1,0 +1,90 @@
+/* ===================================
+========= Register Page Styles  */
+.form-container {
+  margin-top: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  min-height: 150vh;
+  flex-direction: column;
+  background: url("https://www.itl.cat/pngfile/big/235-2353210_fashion-man-and-woman.jpg") no-repeat  !important;
+}
+
+/* Transparent Form with Glass Effect */
+.form-container form {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1); /* Light transparency */
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  border-radius: 10px;
+  width: 350px;
+  margin-left:60%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.form-container form:hover {
+  transform: scale(1.02);
+}
+
+/* Form Title */
+.form-container form .title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  color: #000000; /* White text for readability */
+}
+
+/* Input Fields */
+.form-container form input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #fff;
+  border-radius: 0;
+  padding: 8px;
+  font-size: 16px;
+  outline: none;
+  background: transparent;
+  color: #000000; 
+}
+
+/* Placeholder Color */
+.form-container form input::placeholder {
+  color: rgba(0, 0, 0, 0.651);
+}
+
+/* Input Focus */
+.form-container form input:focus {
+  border-bottom: 2px solid #007bff;
+}
+
+/* Button */
+.form-container form button {
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #434343, #000000);
+  color: white;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-container form button:hover {
+  background: linear-gradient(to right, #000000, #434343);
+  transform: scale(1.05);
+}
+
+/* Forgot Password Button */
+.forgot-btn {
+  background-color: rgba(67, 67, 67, 0.7) !important;
+  border: 0 !important;
+  color: white !important;
+}
+
+.forgot-btn:hover {
+  background-color: rgba(67, 67, 67, 0.9) !important;
+}

@@ -1,0 +1,126 @@
+/* Banner container */
+.banner-slider {
+    position: relative;
+    width: 100%;
+    height: 650px; /* Adjust the height as needed */
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+/* Navigation buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5); /* Darker background for better visibility */
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1000; /* Ensure it stays above everything */
+    border-radius: 50%; /* Make it circular */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+
+/* Banner container */
+.banner-slider {
+    position: relative;
+    width: 100%;
+    height: 650px; /* Adjust as needed */
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+/* Dots Navigation */
+.dots-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dot:hover,
+.active-dot {
+    background: white;
+}
+
+/* Slide */
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* Content inside the slide */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1rem;
+}
+
+/* Image click container */
+.image-click {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.image-click img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6; /* Add opacity to image for better text visibility */
+    transition: opacity 0.3s ease;
+}
+
+.image-click:hover img {
+    opacity: 1; /* Increase image opacity on hover */
+}

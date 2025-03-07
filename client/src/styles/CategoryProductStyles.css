@@ -1,0 +1,93 @@
+.category {
+    flex-wrap: wrap;
+    margin-top: 80px !important;
+  }
+  .category .card {
+    background-color: rgba(128, 128, 128, 0.097);
+    width: 18rem;
+    flex: 1 1 30%; 
+  }
+  .category .card-name-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .category .card-price {
+    color: green;
+    font-weight: bold;
+  }
+  .category button {
+    border-radius: 0;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 5px;
+    font-size: 14px;
+
+    font-weight: bold;
+  }
+  
+  .category .card-text {
+    color: rgb(90, 89, 89);
+  }
+  
+  .category .card img:hover {
+    transform: scale(0.9);
+  }
+  
+  .category .card-img-top {
+    height: 300px !important;
+  }
+ /* General Container Style */
+.category {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Make sure the cards have consistent spacing */
+.product-card {
+  margin-bottom: 20px; /* Adds space between the cards */
+  flex: 1 1 30%; /* Ensures cards take up 3 columns' width */
+}
+
+
+/* Card Body Styles */
+.card-body {
+  padding: 10px;
+}
+
+.card-name-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 10px;
+}
+
+/* Add spacing for buttons in the card */
+.card-name-price button {
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .product-card {
+    flex: 1 1 45%; /* For medium-sized screens, 2 products per row */
+  }
+}
+
+@media (max-width: 576px) {
+  .product-card {
+    flex: 1 1 100%; /* For small screens, 1 product per row */
+  }
+}
