@@ -13,6 +13,7 @@ import AdminRoute from "./components/Routes/AdminRoute";
 import AdminDashboard from "./pages/Admin/AdminDashboard";
 import CreateCategory from "./pages/Admin/CreateCategory";
 import CreateProduct from "./pages/Admin/CreateProduct";
+import SaleOver from "./pages/SaleOver"; 
 
 import Orders from "./pages/user/Orders";
 import Profile from "./pages/user/Profile";
@@ -66,7 +67,7 @@ const App = () => {
             <Route path="/search" element={<Search />} />
             <Route path="/sustainability" element={<Sustainability />} />
             <Route path="/limitedEdition" element={<LimitedEdition />} />
-
+            <Route path="/saleover" element={<SaleOver />} />
            
 
             <Route path="/dashboard" element={<PrivateRoute />}>

@@ -76,7 +76,7 @@ const ProductDetails = () => {
 };
 
   const addToCart = (product) => {
-    if (!selectedSize) {
+    if (!selectedSize && !["bags", "accessories", "jewellery"].includes(product?.category?.name)) {
       toast.error("Please select a size before adding to cart!");
       return;
     }
