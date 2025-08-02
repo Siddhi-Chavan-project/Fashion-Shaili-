@@ -8,7 +8,7 @@
   justify-content:center;
   min-height: 150vh;
   flex-direction: column;
-  background: url("https://www.itl.cat/pngfile/big/235-2353210_fashion-man-and-woman.jpg") no-repeat  !important;
+  background: url("../assets/images/register.jpg") no-repeat  !important;
 }
 
 /* Transparent Form with Glass Effect */
