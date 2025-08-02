@@ -33,6 +33,14 @@ app.use("/api/v1/product", productRoutes);
 // app.get("*", function(req, res) {
 //   res.sendFile(path.join(__dirname,"./client/build/index.html"));
 // });
+const path = require("path");
+
+// Serve React build files
+app.use(express.static(path.join(__dirname, "client/build")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client/build", "index.html"));
+});
 
 //PORT
 const PORT = process.env.PORT || 8080;
